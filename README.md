@@ -2,7 +2,7 @@
 
 Portfolio: setup and mobile version skeleton
 
-> This project is a my portfolio setup for mobile device.
+> This project is my portfolio setup for mobile device.
 
 ![screenshot](./images/Screenshot.png)
 
@@ -13,10 +13,6 @@ Additional description about the project and its features.
 - HTML
 - CSS
 
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
@@ -32,7 +28,7 @@ cd Portfolio
 
 ## Authors
 
-👤 **Author1**
+👤 **Yishak**
 
 - GitHub: [Yishak ,Wes-Isaac](https://github.com/Wes-Isaac)
 - LinkedIn: [@Yishak](https://www.linkedin.com/in/yishak-wesego-b404851a7/)
