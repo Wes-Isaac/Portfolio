@@ -26,6 +26,7 @@ To get a local copy up and running follow these simple example steps.
 Clone the repo to your local machine.
 
 git clone https://github.com/Wes-Isaac/Portfolio.git
+
 cd Portfolio
 
 
