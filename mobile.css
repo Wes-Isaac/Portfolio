@@ -10,8 +10,10 @@ body {
 }
 
 main {
-    min-width: 400px;
-    background: url(./images/header-illsutration-mobile@2x.png) no-repeat center center/cover;
+  min-width: 400px;
+  background: url(./images/header-illsutration-mobile@2x.png) no-repeat center center/cover;
+  min-width: 400px;
+  background: url(./images/header-illsutration-mobile@2x.png) no-repeat center center/cover;
 }
 
 .nav {
