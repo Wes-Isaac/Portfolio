@@ -18,6 +18,10 @@ It is bult with flexbox and css grid. It contains images some are background ima
 - HTML
 - CSS
 
+## Live Demo
+
+[Live Demo Link](https://wes-isaac.github.io/Portfolio/)
+
 
 
 ## Getting Started
