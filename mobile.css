@@ -372,7 +372,7 @@ form {
   margin: 10px auto;
 }
 
-.form-container legend {
+.form-container h1 {
   width: 327px;
   height: 363px;
   font-family: Inter, Arial, Helvetica, sans-serif;
@@ -391,7 +391,7 @@ form {
   align-items: center;
   padding: 0;
   position: static;
-  margin: 58px auto;
+  margin: 38px auto;
 }
 
 .form-control {
@@ -470,7 +470,8 @@ form {
   text-align: center;
   color: #42526e;
   margin: 20px auto;
-  margin-top: -55px;
+  margin-top: -50px;
+  margin-bottom: 140px;
 }
 
 .email-container li {
