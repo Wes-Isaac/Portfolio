@@ -7,6 +7,7 @@
 
 body {
   min-height: 100vh;
+  min-width: 400px;
 }
 
 main {
@@ -350,4 +351,132 @@ button {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #36b37e;
+}
+
+.form-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 24px;
+}
+
+.form-container .form-img {
+  position: absolute;
+  height: 132.37px;
+  top: 78%;
+  left: 88.5%;
+}
+
+form {
+  margin: 10px auto;
+}
+
+.form-container legend {
+  width: 327px;
+  height: 363px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin: 24px auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  position: static;
+  margin: 58px auto;
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-control .textarea-img {
+  position: absolute;
+  left: 95%;
+  top: 75.67%;
+  color: #60c095;
+}
+
+.form-control input {
+  width: 327px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 12px auto;
+}
+
+.form-control textarea {
+  width: 327px;
+  height: 114px;
+  background: #fff;
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 12px auto;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.form-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: static;
+  width: 170.17px;
+  height: 20px;
+  left: 102.42px;
+  margin: 15px 0;
+  margin-top: 30px;
+}
+
+.form-button {
+  padding: 15px;
+  width: 128px;
+  height: 48px;
+}
+
+.medium {
+  margin-top: 2px;
+}
+
+.form-social li {
+  list-style-type: none;
+  padding: 0.15rem;
+}
+
+.email-container {
+  width: 375px;
+  height: 189px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  margin: 20px auto;
+  margin-top: -55px;
+}
+
+.email-container li {
+  width: 100%;
+}
+
+.email {
+  font-family: Inter, Arial, Helvetica, sans-serif;
 }
