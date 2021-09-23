@@ -11,8 +11,28 @@ body {
 }
 
 main {
+  height: inherit;
   min-width: 400px;
   background: url(./images/header-illsutration-mobile@2x.png) no-repeat center center/cover;
+}
+
+.desktop {
+  display: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 12px;
+}
+
+li {
+  list-style: none;
+}
+
+.mobile {
+  display: block;
 }
 
 .nav {
@@ -39,6 +59,7 @@ main {
   height: 726px;
   left: 0;
   top: 92px;
+  margin: auto;
 }
 
 h1 {
@@ -95,16 +116,16 @@ p {
 }
 
 .section-header {
-  max-width: 320px;
+  max-width: 90%;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   display: flex;
-  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #172b4d;
   margin: 20px 0;
-  margin: 1.5rem;
+  margin: auto;
 }
 
 .indicator {
@@ -112,7 +133,7 @@ p {
   height: 4px;
   background: #36b47e;
   border-radius: 24px;
-  margin: 1rem 10rem;
+  margin: 1rem auto;
   margin-bottom: 30px;
 }
 
@@ -430,6 +451,7 @@ form {
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
+  resize: none;
 }
 
 .form-social {
