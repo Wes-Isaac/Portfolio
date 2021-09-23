@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width:900px)" href="style.css">
     <link rel="stylesheet" media="screen and (max-width:500px) " href="mobile.css">
 </head>
 <body>
     
     <header>
-        <nav>
+        <nav class="mobile">
             <ul class="nav">
                 <li class="welcome"> <a href="#">Welcome</a></li>
                 <li><i class="fal fa-bars"></i></li>
+            </ul>
+        </nav>
+        <nav class="desktop">
+            <ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -36,7 +43,8 @@
            <a href="#"> <i class="fal 2x fa-chevron-circle-down fa-2x dropdown"></i></a>
         </section>
     </main>
-    <section>
+    
+    <section class="recent-work">
         <header>
             <h1 class="section-header">My Recent Works</h1>
             <div class="indicator"></div>
@@ -128,7 +136,8 @@
             <div class="head-ele">
 
                 <h1 class="aboutme-header">About me</h1>
-                <div class="bg-img-1"></div>
+                <div class="desktop bg-img-1"></div>
+                <div class="desktop bg-img-2"></div>
             </div>
                 <p class="aboutme-p"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                     don’t hestiate to contact me.</p>
@@ -138,7 +147,7 @@
 
         </div>
 
-        <div class="grid-container">
+        <div class="flex-container">
             <div class="grid-item">
                 <div class="icon">
                         <img class="icon-img" src="./images/Icon-Langguage.png" alt="">
@@ -207,7 +216,7 @@
     <section class="form">
         <div class="form-container">
             <form action="https://formspree.io/f/mwkaywog" method="post">
-                <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
+                <h1 class="form-header">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
                 <div class="form-group">
 
                     <div class="form-control">
@@ -228,18 +237,21 @@
                     <button type="submit" class="form-button">Get in touch</button>
                     <ul class="form-social">
              
-                        <li><a href="#"><img class="medium" src="./images/twitter.jpg" alt="twitter"></a></li>
-                        <li><a href="#"><img src="./images/Linkedinicon.jpg" alt="linkedIn"></a></li>
-                        <li><a href="#"><img class="medium" src="./images/medium.jpg" alt="microverse"></a></li>
-                        <li><a href="#"><img src="./images/github.jpg" alt="github"></a></li>
-                        <li><a href="#"><img src="./images/angellist.jpg" alt="angellist"></a></li>
+                        <li class="twitter"><a href="#"><img class="medium" src="./images/twitter.jpg" alt="twitter"></a></li>
+                        <li class="linkedin"><a href="#"><img src="./images/Linkedinicon.jpg" alt="linkedIn"></a></li>
+                        <li class="mv"><a href="#"><img class="medium" src="./images/medium.jpg" alt="microverse"></a></li>
+                        <li class="github"><a href="#"><img src="./images/github.jpg" alt="github"></a></li>
+                        <li class="angel"><a href="#"><img src="./images/angellist.jpg" alt="angellist"></a></li>
                     </ul> 
                     
                 </div>
 
             </form>
 
-        <img class="form-img" src="./images/illustration-contact-form.png" alt="form-background">
+        <img class="mobile form-img" src="./images/illustration-contact-form.png" alt="form-background">
+        <div class="desktop ds-form-img"></div>
+        <div class="desktop ds-form-img-2"></div>
+        <div class="desktop ds-form-img-3"></div>
 
 
         </div>
@@ -250,6 +262,7 @@
             </li>
             
         </ul>
+    
     </section>
 </body>
 </html>
