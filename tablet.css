@@ -12,8 +12,8 @@ body {
 
 main {
   height: inherit;
-  min-width: 400px;
-  background: url(./images/header-illsutration-mobile@2x.png) no-repeat center center/cover;
+  background: url(./images/header-illsutration-mobile@2x.png) no-repeat;
+  background-size: cover;
 }
 
 .desktop {
@@ -144,8 +144,9 @@ p {
 }
 
 .item {
+  width: 80%;
   height: 474px;
-  margin: 24px;
+  margin: 24px auto;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
 }
@@ -178,16 +179,16 @@ h3 {
 .skillsbar {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  width: 305px;
-  margin: 16px 0;
+  justify-content: center;
+  width: 100%;
+  margin: 16px auto;
 }
 
 .skillsbar li {
-  padding: 8px;
+  padding: 10px 15px;
   background: #ebf0ee;
   border-radius: 4px;
-  margin: 4px;
+  margin: 10px 14px;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -233,19 +234,20 @@ button {
 }
 
 .aboutme-header {
+  width: 100%;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   display: flex;
-  align-items: center;
+  justify-content: center;
   text-align: center;
   margin: 24px auto;
   margin-right: 40px;
 }
 
 .aboutme-p {
-  width: 351px;
+  width: 60%;
   height: 189px;
   font-style: normal;
   font-weight: normal;
@@ -261,13 +263,13 @@ button {
   border: 1px solid #c1c7d0;
   box-sizing: border-box;
   border-radius: 8px;
-  width: 327px;
+  width: 60%;
   height: 352px;
   margin: 24px auto;
 }
 
 .icon {
-  width: 327px;
+  width: 100%;
   height: 128px;
   display: flex;
   justify-content: center;
@@ -386,7 +388,7 @@ button {
   position: absolute;
   height: 132.37px;
   top: 78%;
-  left: 88.5%;
+  left: calc(100% - 57px);
 }
 
 form {
@@ -394,8 +396,7 @@ form {
 }
 
 .form-container h1 {
-  width: 327px;
-  height: 363px;
+  width: 75%;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -417,17 +418,18 @@ form {
 
 .form-control {
   position: relative;
+  width: 80%;
 }
 
 .form-control .textarea-img {
   position: absolute;
-  left: 95%;
+  left: calc(100% - 17px);
   top: 75.67%;
   color: #60c095;
 }
 
 .form-control input {
-  width: 327px;
+  width: 100%;
   padding: 15px;
   background: #fff;
   border: 1px solid #d0d9d4;
@@ -437,7 +439,7 @@ form {
 }
 
 .form-control textarea {
-  width: 327px;
+  width: 100%;
   height: 114px;
   background: #fff;
   border: 1px solid #60c095;
