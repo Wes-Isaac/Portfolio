@@ -54,6 +54,11 @@ h1 {
   text-align: center;
   color: #172b4d;
   margin: 24px;
+  transition: transform 1s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.2);
 }
 
 .primary {
