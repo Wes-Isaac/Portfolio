@@ -54,6 +54,11 @@ h1 {
   text-align: center;
   color: #172b4d;
   margin: 24px;
+  transition: transform 1s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.2);
 }
 
 .primary {
@@ -179,6 +184,11 @@ button {
   color: #fff;
   background: #36b37f;
   margin: 5px 10px;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background: #56dba4;
 }
 
 .aboutme-text {
