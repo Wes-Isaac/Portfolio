@@ -20,6 +20,10 @@ main {
   display: none;
 }
 
+.invisible {
+  display: none;
+}
+
 ul li a {
   text-decoration: none;
   color: #000;
