@@ -18,6 +18,7 @@ It is bult with flexbox and css grid. It contains images some are background ima
 - HTML
 - CSS
 - JavaScript
+- Github
 
 ## Live Demo
 
