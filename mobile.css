@@ -11,12 +11,10 @@ html {
 
 body {
   min-height: 100vh;
-  min-width: 400px;
 }
 
 main {
   height: inherit;
-  min-width: 400px;
   background: url(./images/header-illsutration-mobile@2x.png) no-repeat center center/cover;
 }
 

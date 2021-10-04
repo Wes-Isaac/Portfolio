@@ -13,6 +13,10 @@ body {
   position: relative;
 }
 
+.invisible {
+  display: none;
+}
+
 main {
   height: 160vh;
   background: url(./images/Header-llustration-desktop@2x.png) no-repeat;

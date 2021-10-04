@@ -17,6 +17,7 @@ It is bult with flexbox and css grid. It contains images some are background ima
 
 - HTML
 - CSS
+- JavaScript
 
 ## Live Demo
 
@@ -42,7 +43,9 @@ cd Portfolio
 - GitHub: [Yishak ,Wes-Isaac](https://github.com/Wes-Isaac)
 - LinkedIn: [@Yishak](https://www.linkedin.com/in/yishak-wesego-b404851a7/)
 
+👤 **Jeff**
 
+- GitHub: [Jeff](https://github.com/JEFFKAY16)
 
 ## 🤝 Contributing
 
