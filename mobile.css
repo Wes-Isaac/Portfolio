@@ -40,29 +40,6 @@ main {
   color: #93a79d;
 }
 
-.menu ul {
-  padding-top: 20px;
-  background: rgb(255, 255, 255);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.menu ul li {
-  font-size: 32px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  margin: 10px;
-}
-
-.menu ul li a {
-  color: #3a4a42;
-}
-
 .desktop {
   display: none;
 }
@@ -549,4 +526,27 @@ form {
 
 .email {
   font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.menu ul {
+  padding-top: 20px;
+  background: rgb(255, 255, 255);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.menu ul li {
+  font-size: 32px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.menu ul li a {
+  color: #3a4a42;
 }
