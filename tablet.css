@@ -596,3 +596,11 @@ span {
   margin: auto 4px;
   text-align: center;
 }
+
+.error {
+  color: #da2c2c;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
