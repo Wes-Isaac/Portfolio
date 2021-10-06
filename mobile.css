@@ -575,6 +575,20 @@ form {
   display: flex;
   flex-direction: column;
   background: rgb(255, 255, 255);
+  padding: 2%;
+}
+.container-title {
+  font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 44px;
+/* or 137% */
+
+
+/* Neutrals/N800 */
+
+color: #172B4D;
 }
 
 .popup-img {
@@ -603,6 +617,7 @@ form {
   font-size: 20px;
   line-height: 28px;
   padding: 10px;
+  text-align: start;
   color: #172b4d;
   margin: 0 auto;
 }
