@@ -17,7 +17,7 @@ const popup = document.querySelector('.popup-window');
 
 popup.innerHTML = `<div class="container">
 <button class="close-button"><i class="fa fa-times"></i></button>
-<img src=${project.image} alt="project-img" class="popup-img">
+<img src="${project.image}" alt="project-img" class="popup-img">
 <div class="header-container">
     <h2 class="container-title">${project.title}</h2>
     <div class="desktop butt">
