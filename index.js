@@ -1,7 +1,6 @@
-const project = {
+const projects = [{
   title: 'Keeping track of hundreds of components',
-  image: 'images/snapShootPortfolio.png',
-  // './images/ImgPlaholder.png'
+  image: 'images/SnapshootPortfolio.png',
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   lang1: 'Ruby on Rails',
   lang2: 'css',
@@ -11,14 +10,14 @@ const project = {
   lang6: 'Terminal',
   lang7: 'Codekit',
   lang8: 'Github',
-};
-
+}];
+const [project] = projects;
 const button = document.querySelectorAll('.popup');
 const popup = document.querySelector('.popup-window');
 
 popup.innerHTML = `<div class="container">
 <button class="close-button"><i class="fa fa-times"></i></button>
-<img src=${project.image} alt="project-img" class="popup-img">
+<img src="${project.image}" alt="project-img" class="popup-img">
 <div class="header-container">
     <h2 class="container-title">${project.title}</h2>
     <div class="desktop butt">
