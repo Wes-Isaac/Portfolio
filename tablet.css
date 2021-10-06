@@ -536,6 +536,15 @@ form {
   display: flex;
   flex-direction: column;
   background: rgb(255, 255, 255);
+  padding: 1%;
+}
+
+.container-title {
+  width: 100%;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 .popup-img {
@@ -559,6 +568,7 @@ form {
 
 .description {
   width: 100%;
+  height: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;

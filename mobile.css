@@ -98,7 +98,7 @@ h1 {
   color: #36b37e;
 }
 
-/* p {
+p {
   width: 327px;
   height: 164px;
   left: 24px;
@@ -110,7 +110,7 @@ h1 {
   text-align: center;
   color: #172b4d;
   margin: 58px 0;
-} */
+}
 
 .social {
   display: flex;

@@ -544,7 +544,6 @@ form {
   flex-direction: column;
   background: rgb(255, 255, 255);
   padding: 1%;
-
 }
 
 .header-container {
@@ -587,6 +586,7 @@ form {
 
 .description {
   width: 100%;
+  height: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
