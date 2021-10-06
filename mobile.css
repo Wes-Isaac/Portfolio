@@ -577,9 +577,17 @@ form {
   background: rgb(255, 255, 255);
 }
 
+.container-title {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
 .popup-img {
   width: 100%;
-  min-height: 30%;
 }
 
 .close-button {
