@@ -575,6 +575,7 @@ form {
   display: flex;
   flex-direction: column;
   background: rgb(255, 255, 255);
+  padding: 2%;
 }
 
 .container-title {
@@ -612,6 +613,7 @@ form {
   font-size: 20px;
   line-height: 28px;
   padding: 10px;
+  text-align: start;
   color: #172b4d;
   margin: 0 auto;
 }
