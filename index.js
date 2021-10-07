@@ -75,7 +75,10 @@ function isLower(str) {
 
 const form = document.querySelector('.form');
 const emailInput = document.querySelector('[type=email]');
+const textInput = document.querySelector('[type=text]');
+const textArea = document.querySelector('textarea');
 const errorInput = document.querySelector('.error');
+const formInput = [textInput, emailInput, textArea];
 
 function error() {
   if (emailInput.validity.valueMissing) {
@@ -93,5 +96,15 @@ form.addEventListener('submit', (e) => {
   if (!emailInput.validity.valid || isLower(emailInput.value)) {
     error();
     e.preventDefault();
+  } else {
+    localStorage.clear();
   }
 });
+
+function populateStorage() {
+  localStorage.setItem('name', document.querySelector('[type=text]').value);
+  localStorage.setItem('email', document.querySelector('[type=email]').value);
+  localStorage.setItem('textarea', document.querySelector('textarea').value);
+  console.log('HELLO');
+}
+formInput.forEach((input) => input.addEventListener('keyup', populateStorage));
