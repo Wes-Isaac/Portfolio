@@ -108,3 +108,10 @@ function populateStorage() {
   console.log('HELLO');
 }
 formInput.forEach((input) => input.addEventListener('keyup', populateStorage));
+
+function setForm() {
+  document.querySelector('[type=text]').value = localStorage.getItem('name');
+  document.querySelector('[type=email]').value =localStorage.getItem('email');
+  document.querySelector('textarea').value =localStorage.getItem('textarea');
+}
+setForm();
