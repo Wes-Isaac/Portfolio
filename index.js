@@ -102,15 +102,22 @@ form.addEventListener('submit', (e) => {
 });
 
 function populateStorage() {
-  localStorage.setItem('name', document.querySelector('[type=text]').value);
-  localStorage.setItem('email', document.querySelector('[type=email]').value);
-  localStorage.setItem('textarea', document.querySelector('textarea').value);
+  const formData = {
+    name: textInput.value,
+    email: emailInput.value,
+    message: textArea.value,
+  };
+  localStorage.setItem('data', JSON.stringify(formData));
 }
 formInput.forEach((input) => input.addEventListener('keyup', populateStorage));
 
 function setForm() {
-  document.querySelector('[type=text]').value = localStorage.getItem('name');
-  document.querySelector('[type=email]').value = localStorage.getItem('email');
-  document.querySelector('textarea').value = localStorage.getItem('textarea');
+  const data = JSON.parse(localStorage.getItem('data'));
+  if (data != null) {
+    textInput.value = data.name;
+    emailInput.value = data.email;
+    textArea.value = data.message;
+  }
 }
+
 setForm();
