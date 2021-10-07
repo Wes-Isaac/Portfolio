@@ -105,13 +105,12 @@ function populateStorage() {
   localStorage.setItem('name', document.querySelector('[type=text]').value);
   localStorage.setItem('email', document.querySelector('[type=email]').value);
   localStorage.setItem('textarea', document.querySelector('textarea').value);
-  console.log('HELLO');
 }
 formInput.forEach((input) => input.addEventListener('keyup', populateStorage));
 
 function setForm() {
   document.querySelector('[type=text]').value = localStorage.getItem('name');
-  document.querySelector('[type=email]').value =localStorage.getItem('email');
-  document.querySelector('textarea').value =localStorage.getItem('textarea');
+  document.querySelector('[type=email]').value = localStorage.getItem('email');
+  document.querySelector('textarea').value = localStorage.getItem('textarea');
 }
 setForm();
