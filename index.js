@@ -75,7 +75,10 @@ function isLower(str) {
 
 const form = document.querySelector('.form');
 const emailInput = document.querySelector('[type=email]');
+const textInput = document.querySelector('[type=text]');
+const textArea = document.querySelector('textarea');
 const errorInput = document.querySelector('.error');
+const formInput = [textInput, emailInput, textArea];
 
 function error() {
   if (emailInput.validity.valueMissing) {
@@ -93,5 +96,28 @@ form.addEventListener('submit', (e) => {
   if (!emailInput.validity.valid || isLower(emailInput.value)) {
     error();
     e.preventDefault();
+  } else {
+    localStorage.clear();
   }
 });
+
+function populateStorage() {
+  const formData = {
+    name: textInput.value,
+    email: emailInput.value,
+    message: textArea.value,
+  };
+  localStorage.setItem('data', JSON.stringify(formData));
+}
+formInput.forEach((input) => input.addEventListener('keyup', populateStorage));
+
+function setForm() {
+  const data = JSON.parse(localStorage.getItem('data'));
+  if (data != null) {
+    textInput.value = data.name;
+    emailInput.value = data.email;
+    textArea.value = data.message;
+  }
+}
+
+setForm();
