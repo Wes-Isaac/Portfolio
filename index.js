@@ -1,14 +1,14 @@
 const projects = [{
   title: 'Keeping track of hundreds of components',
   image: 'images/Screenshot(24).png',
-  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+  description: "A simple to do list Application which dynamically renders tasks in JavaScript using the Webpack. Projects and tasks can be created and stored in Web browser's local storage.",
   lang1: 'html',
   lang2: 'css',
   lang3: 'JavaScript',
   lang4: 'Bootstrap',
   lang5: 'gpages',
   lang6: 'Terminal',
-  lang7: 'Codekit',
+  lang7: 'Webpack',
   lang8: 'Github',
 }];
 const [project] = projects;
