@@ -538,7 +538,7 @@ form {
 
 .container {
   position: relative;
-  width: 90%;
+  width: 80%;
   margin: 2% auto;
   display: flex;
   flex-direction: column;
