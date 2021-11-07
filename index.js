@@ -1,6 +1,6 @@
 const projects = [{
-  title: 'Keeping track of hundreds of components',
-  image: 'images/Screenshot(24).png',
+  title: 'To do list app',
+  image: 'images/Screenshot24.png',
   description: "A simple to do list Application which dynamically renders tasks in JavaScript using the Webpack. Projects and tasks can be created and stored in Web browser's local storage.",
   lang1: 'html',
   lang2: 'css',

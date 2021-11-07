@@ -176,7 +176,7 @@ p {
 }
 
 .placeholder {
-  background: #ebf0ee;
+  background: url(./images/Screenshot24.png) no-repeat center center/cover;
   height: 50%;
   margin: auto;
 }
