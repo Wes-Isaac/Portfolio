@@ -21,8 +21,8 @@ popup.innerHTML = `<div class="container">
 <div class="header-container">
     <h2 class="container-title">${project.title}</h2>
     <div class="desktop butt">
-<button>See Live<span><img src="./images/Icon-Export.png" alt="github"></span></button>
-<button>See Source<span><img src="./images/Git.png" alt="github"></span></button>
+<button><a href="https://wes-isaac.github.io/To-do-list/dist/" target="_blank">See Live</a><span><img src="./images/Icon-Export.png" alt="github"></span></button>
+<button><a href="https://github.com/Wes-Isaac/To-do-list" target="_blank">See Source</a><span><img src="./images/Git.png" alt="github"></span></button>
 </div>
 </div>
 
@@ -38,8 +38,8 @@ popup.innerHTML = `<div class="container">
 </ul>
 <p class="description">${project.description}</p>
 <div class="buttons mobile">
-<button>See Live<span><img src="./images/Icon-Export.png" alt="github"></span></button>
-<button>See Source<span><img src="./images/Git.png" alt="github"></span></button>
+<button><a href="https://wes-isaac.github.io/To-do-list/dist/" target="_blank">See Live</a><span><img src="./images/Icon-Export.png" alt="github"></span></button>
+<button><a href="https://github.com/Wes-Isaac/To-do-list" target="_blank">See Source</a><span><img src="./images/Git.png" alt="github"></span></button>
 </div>
 
 </div>`;

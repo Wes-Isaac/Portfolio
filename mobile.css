@@ -545,6 +545,11 @@ form {
   margin: 10px;
 }
 
+.butt a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .menu ul li a {
   color: #3a4a42;
 }

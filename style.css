@@ -5,6 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .mobile {
   display: none;
 }
@@ -41,6 +45,7 @@ ul li a {
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 12px;
+  font-weight: bolder;
 }
 
 .headline {
@@ -187,7 +192,7 @@ button {
   letter-spacing: 0.03em;
   color: #fff;
   background: #36b37f;
-  margin: 5px 10px;
+  margin: 25px 10px;
 }
 
 .aboutme-text {
@@ -608,6 +613,11 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.butt a {
+  text-decoration: none;
+  color: #fff;
 }
 
 span {
