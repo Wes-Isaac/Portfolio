@@ -255,16 +255,18 @@ p {
 }
 
 .item {
-  height: 474px;
   margin: 24px;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
 }
 
 .placeholder {
-  background: url(./images/Screenshot24.png) no-repeat center center/cover;
-  height: 50%;
   margin: auto;
+}
+
+.placeholder img {
+  width: 100%;
+  height: 100%;
 }
 
 .text {
@@ -290,6 +292,7 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   width: 305px;
   margin: 16px 0;
 }
@@ -343,18 +346,6 @@ button {
   display: flex;
   margin-top: -3rem;
 }
-
-/* .aboutme-header {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 24px auto;
-  margin-right: 40px;
-} */
 
 .aboutme-p {
   width: 351px;
@@ -701,7 +692,7 @@ form {
 
 .container {
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
