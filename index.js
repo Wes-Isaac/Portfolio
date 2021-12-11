@@ -57,7 +57,7 @@ button.forEach((but) => {
 const hamburger = document.querySelector('.fa-bars');
 const menu = document.querySelector('#menu');
 const menuLis = menu.querySelectorAll('li');
-const sections = document.querySelectorAll('section')
+const sections = document.querySelectorAll('section');
 
 hamburger.addEventListener('click', () => {
   menu.classList.replace('invisible', 'menu');
