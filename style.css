@@ -21,6 +21,10 @@ body {
   display: none;
 }
 
+.blur {
+  filter: blur(15px);
+}
+
 main {
   height: 160vh;
   background: url(./images/Header-llustration-desktop@2x.png) no-repeat;
@@ -48,11 +52,37 @@ ul li a {
   font-weight: bolder;
 }
 
+.sup-text {
+  opacity: 0;
+  transform: translateY(3rem);
+  font-weight: 600;
+  animation: fadeIn 2.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .headline {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 160px 0;
+}
+
+.headline-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  opacity: 0;
+  transform: translateY(-3rem);
+  animation: fadeIn 2.5s forwards;
 }
 
 h1 {
@@ -63,11 +93,6 @@ h1 {
   text-align: center;
   color: #172b4d;
   margin: 24px;
-  transition: transform 1s ease-in-out;
-}
-
-h1:hover {
-  transform: scale(1.2);
 }
 
 .primary {
@@ -98,9 +123,12 @@ p {
   color: #505f79;
 }
 
+.drop-a {
+  margin: 40px auto;
+}
+
 .dropdown {
-  margin: 84px auto;
-  color: #505f79;
+  color: #797878;
 }
 
 .recent-work {
@@ -131,16 +159,19 @@ p {
 }
 
 .item {
-  height: 474px;
+  min-height: 474px;
   margin: 14px;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
 }
 
 .placeholder {
-  background: url(./images/Screenshot24.png) no-repeat center center/cover;
-  height: 50%;
   margin: auto;
+}
+
+.placeholder img {
+  width: 100%;
+  height: 100%;
 }
 
 .text {
@@ -164,6 +195,7 @@ h3 {
 .skillsbar {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   margin: 16px 0;
 }
@@ -207,7 +239,9 @@ button {
   position: absolute;
   left: calc(100% - 259.5px);
   top: calc(0% - 100px);
-  background: url(./images/illustration-about-me-1-desktop@2x.png) no-repeat center center/cover;
+  background:
+    url(./images/illustration-about-me-1-desktop@2x.png) no-repeat
+    center center/cover;
   height: 264.7px;
   width: 259.5px;
 }
@@ -253,7 +287,6 @@ button {
 }
 
 .icon {
-  width: 327px;
   height: 128px;
   display: flex;
   justify-content: center;
@@ -373,6 +406,7 @@ form {
   padding: 0;
   max-width: 1000px;
   margin: 0 auto;
+  z-index: 3;
 }
 
 .form-header {
@@ -448,17 +482,10 @@ form {
   margin-left: 0;
 }
 
-.form-social {
+.footer {
   position: absolute;
-  bottom: 0;
-  left: -155px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100vw;
-  margin: -15px 0;
-  margin-bottom: -500px;
-  border-top: #dfe1e6 2.2px solid;
+  bottom: -400px;
+  width: 100%;
 }
 
 .medium {
@@ -471,53 +498,38 @@ form {
   margin: 10px 0;
 }
 
-.github {
-  order: 0;
-}
-
-.linkedin {
-  order: 1;
-}
-
-.angel {
-  order: 2;
-}
-
-.mv {
-  order: 3;
-}
-
-.twitter {
-  order: 4;
-}
-
 .email-container {
   display: none;
 }
 
 .ds-form-img {
   position: absolute;
-  top: calc(20%);
-  left: calc(100% - 347px);
-  background: url(./images/Frame@2x.png) center center/cover;
-  width: 346.16px;
-  height: 790.96px;
+  top: calc(60%);
+  left: calc(100% - 225px);
+  background: url(./images/Frame1.svg);
+  background-repeat: no-repeat;
+  width: 225px;
+  height: 492px;
 }
 
 .ds-form-img-2 {
   position: absolute;
-  top: calc(110%);
+  top: calc(90%);
   left: 0;
-  background: url(./images/illustration-1-contact-form-desktop.png) center center/cover;
+  background:
+    url(./images/illustration-1-contact-form-desktop.png) center
+    center/cover;
   width: 235.78px;
   height: 261.79px;
 }
 
 .ds-form-img-3 {
   position: absolute;
-  top: calc(140%);
+  top: calc(120%);
   left: 25%;
-  background: url(./images/illustration-2-contact-form-desktop-middle.png) center center/cover;
+  background:
+    url(./images/illustration-2-contact-form-desktop-middle.png)
+    center center/cover;
   width: 130.28px;
   height: 105.85px;
 }
@@ -527,18 +539,29 @@ form {
 }
 
 .window {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  z-index: 80;
+  right: 0;
   left: 0;
-  z-index: 2;
+  bottom: 0;
+  top: 0;
   width: 100vw;
   height: 100vh;
-  background: #c1c7d0;
+  background: #c1c7d07c;
+  backdrop-filter: blur(10px);
   border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
+  transform: translateX(-100%);
+  animation: bringIn 500ms forwards;
+}
+
+@keyframes bringIn {
+  to {
+    transform: translateX(0);
+  }
 }
 
 .container {
@@ -549,6 +572,7 @@ form {
   flex-direction: column;
   background: rgb(255, 255, 255);
   padding: 1%;
+  border-radius: 15px;
 }
 
 .header-container {

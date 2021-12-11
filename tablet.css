@@ -14,6 +14,10 @@ body {
   min-width: 400px;
 }
 
+.blur {
+  filter: blur(15px);
+}
+
 main {
   height: inherit;
   background: url(./images/header-illsutration-mobile@2x.png) no-repeat;
@@ -29,19 +33,29 @@ main {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 2;
+  height: 90vh;
+  width: 100vw;
+  z-index: 6;
+  animation: menu 1.5s forwards;
+  transform: translateY(-100%);
+}
+
+@keyframes menu {
+  to {
+    transform: translateY(0);
+  }
 }
 
 .cancel-icon {
   position: absolute;
-  top: 10px;
-  left: 95%;
-  color: #93a79d;
+  top: 15px;
+  left: 93%;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 ul li a {
@@ -59,6 +73,20 @@ li {
   display: block;
 }
 
+.fa-bars {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.mobile-menu {
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 4;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -70,8 +98,61 @@ li {
   list-style-type: none;
 }
 
-.welcome {
+#welcome {
+  font-size: 1.3rem;
   font-weight: bolder;
+  font-family: monospace;
+  position: relative;
+  width: max-content;
+}
+
+#welcome::before {
+  content: "";
+  position: absolute;
+  background: rgb(255, 255, 255);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  animation: color 2s steps(7) 3s forwards;
+}
+
+#welcome::after {
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 0.125em;
+  background: black;
+  animation: color 2s steps(7) 3s forwards, blink 800ms steps(7) infinite;
+}
+
+@keyframes color {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.sup-text {
+  opacity: 0;
+  transform: translateY(3rem);
+  font-weight: 600;
+  animation: fadeIn 2.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .headline {
@@ -79,11 +160,22 @@ li {
   flex-direction: column;
   align-items: center;
   padding: 64px 24px;
-  width: 375px;
   height: 726px;
   left: 0;
   top: 92px;
   margin: auto;
+}
+
+.headline-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  opacity: 0;
+  transform: translateY(-3rem);
+  animation: fadeIn 2.5s forwards;
 }
 
 h1 {
@@ -101,7 +193,7 @@ h1 {
 }
 
 p {
-  width: 327px;
+  width: 60%;
   height: 164px;
   left: 24px;
   top: 314px;
@@ -114,14 +206,17 @@ p {
   margin: 58px 0;
 }
 
+.placeholder img {
+  width: 100%;
+  height: 100%;
+}
+
 .social {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: static;
-  width: 170.17px;
+  align-items: center;
   height: 20px;
-  left: 102.42px;
   margin: 15px 0;
 }
 
@@ -135,8 +230,12 @@ p {
   padding: 0.25rem;
 }
 
+.drop-a {
+  margin: 40px auto;
+}
+
 .dropdown {
-  margin: 78px auto;
+  color: #797878;
 }
 
 .section-header {
@@ -176,8 +275,6 @@ p {
 }
 
 .placeholder {
-  background: url(./images/Screenshot24.png) no-repeat center center/cover;
-  height: 50%;
   margin: auto;
 }
 
@@ -238,7 +335,9 @@ button {
 .aboutme-text {
   margin-top: 30px;
   align-items: center;
-  background: url(./images/illustration-about-me-mobile.jpg) no-repeat center center/cover;
+  background:
+    url(./images/illustration-about-me-mobile.jpg) no-repeat center
+    center/cover;
 }
 
 .head-ele {
@@ -647,6 +746,31 @@ span {
   font-style: normal;
   font-weight: 600;
   margin: 10px;
+}
+
+.menu ul li:nth-child(2) {
+  animation: visible 500ms forwards 1.4s;
+  opacity: 0;
+  transform: translateX(-4rem);
+}
+
+.menu ul li:nth-child(3) {
+  opacity: 0;
+  transform: translateY(-4rem);
+  animation: visible 500ms forwards 1.2s;
+}
+
+.menu ul li:nth-child(4) {
+  opacity: 0;
+  transform: translateY(-4rem);
+  animation: visible 500ms forwards 1s;
+}
+
+@keyframes visible {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .menu ul li a {

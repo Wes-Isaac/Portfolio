@@ -13,9 +13,15 @@ body {
   min-height: 100vh;
 }
 
+.blur {
+  filter: blur(10px);
+}
+
 main {
   height: inherit;
-  background: url(./images/header-illsutration-mobile@2x.png) no-repeat center center/cover;
+  background:
+    url(./images/header-illsutration-mobile@2x.png) no-repeat center
+    center/cover;
 }
 
 .invisible {
@@ -23,19 +29,29 @@ main {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   height: 90vh;
   width: 100vw;
-  z-index: 2;
+  z-index: 6;
+  animation: menu 1.5s forwards;
+  transform: translateY(-100%);
+}
+
+@keyframes menu {
+  to {
+    transform: translateY(0);
+  }
 }
 
 .cancel-icon {
   position: absolute;
-  top: 0;
+  top: 15px;
   left: 93%;
-  color: #93a79d;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 .desktop {
@@ -53,8 +69,22 @@ li {
   list-style: none;
 }
 
+.fa-bars {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
 .mobile {
   display: block;
+}
+
+.mobile-menu {
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 4;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .nav {
@@ -68,8 +98,61 @@ li {
   list-style-type: none;
 }
 
-.welcome {
+#welcome {
+  font-size: 1.3rem;
   font-weight: bolder;
+  font-family: monospace;
+  position: relative;
+  width: max-content;
+}
+
+#welcome::before {
+  content: "";
+  position: absolute;
+  background: rgb(255, 255, 255);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  animation: color 2s steps(7) 3s forwards;
+}
+
+#welcome::after {
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 0.125em;
+  background: black;
+  animation: color 2s steps(7) 3s forwards, blink 800ms steps(7) infinite;
+}
+
+@keyframes color {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.sup-text {
+  opacity: 0;
+  transform: translateY(3rem);
+  font-weight: 600;
+  animation: fadeIn 2.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .headline {
@@ -77,20 +160,22 @@ li {
   flex-direction: column;
   align-items: center;
   padding: 64px 24px;
-  width: 375px;
   height: 726px;
   left: 0;
   top: 92px;
   margin: auto;
 }
 
-h1 {
+.headline-text {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  opacity: 0;
+  transform: translateY(-3rem);
+  animation: fadeIn 2.5s forwards;
 }
 
 .primary {
@@ -112,14 +197,16 @@ p {
   margin: 58px 0;
 }
 
+.placeholder img {
+  width: 100%;
+  height: 100%;
+}
+
 .social {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: static;
-  width: 170.17px;
-  height: 20px;
-  left: 102.42px;
+  align-items: center;
   margin: 15px 0;
 }
 
@@ -133,8 +220,12 @@ p {
   padding: 0.25rem;
 }
 
+.drop-a {
+  margin: 40px auto;
+}
+
 .dropdown {
-  margin: 78px auto;
+  color: #797878;
 }
 
 .section-header {
@@ -166,15 +257,12 @@ p {
 }
 
 .item {
-  height: 474px;
   margin: 24px;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
 }
 
 .placeholder {
-  background: url(./images/Screenshot24.png) no-repeat center center/cover;
-  height: 50%;
   margin: auto;
 }
 
@@ -201,6 +289,7 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   width: 305px;
   margin: 16px 0;
 }
@@ -235,7 +324,9 @@ button {
 .aboutme-text {
   margin-top: 30px;
   align-items: center;
-  background: url(./images/illustration-about-me-mobile.jpg) no-repeat center center/cover;
+  background:
+    url(./images/illustration-about-me-mobile.jpg) no-repeat center
+    center/cover;
 }
 
 .head-ele {
@@ -243,27 +334,16 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0;
-  min-width: 400px;
 }
 
 .bg-img-1 {
   background: url(./images/Mask-Group.jpg) no-repeat center center/cover;
+  position: absolute;
+  left: calc(100% - 68px);
   width: 68px;
   height: 127px;
   display: flex;
   margin-top: -3rem;
-}
-
-.aboutme-header {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 24px auto;
-  margin-right: 40px;
 }
 
 .aboutme-p {
@@ -407,8 +487,9 @@ button {
 .form-container .form-img {
   position: absolute;
   height: 132.37px;
+  width: 50px;
   top: 78%;
-  left: 88.5%;
+  left: calc(100% - 50px);
 }
 
 form {
@@ -545,7 +626,37 @@ form {
   margin: 10px;
 }
 
+.menu ul li:nth-child(2) {
+  animation: visible 500ms forwards 1.4s;
+  opacity: 0;
+  transform: translateX(-4rem);
+}
+
+.menu ul li:nth-child(3) {
+  opacity: 0;
+  transform: translateY(-4rem);
+  animation: visible 500ms forwards 1.2s;
+}
+
+.menu ul li:nth-child(4) {
+  opacity: 0;
+  transform: translateY(-4rem);
+  animation: visible 500ms forwards 1s;
+}
+
+@keyframes visible {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .butt a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.buttons a {
   text-decoration: none;
   color: #fff;
 }
@@ -559,28 +670,40 @@ form {
 }
 
 .window {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  z-index: 80;
+  right: 0;
   left: 0;
-  z-index: 2;
+  bottom: 0;
+  top: 0;
   width: 100vw;
   height: 100vh;
-  background: #c1c7d0;
+  background: #c1c7d07c;
+  backdrop-filter: blur(10px);
   border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
+  transform: translateX(100%);
+  animation: bringIn 500ms forwards;
+}
+
+@keyframes bringIn {
+  to {
+    transform: translateX(0);
+  }
 }
 
 .container {
   position: relative;
-  width: 90%;
-  margin: 2% auto;
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   background: rgb(255, 255, 255);
-  padding: 2%;
+  padding: 25px 5px;
+  border-radius: 10px;
 }
 
 .container-title {
