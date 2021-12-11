@@ -46,12 +46,10 @@ popup.innerHTML = `<div class="container">
 const close = document.querySelector('.close-button');
 close.addEventListener('click', () => {
   popup.classList.replace('window', 'invisible');
-  document.body.classList.remove('isfixed');
 });
 
 button.forEach((but) => {
   but.addEventListener('click', () => {
-    document.body.classList.add('isfixed');
     popup.classList.replace('invisible', 'window');
   });
 });
@@ -59,13 +57,16 @@ button.forEach((but) => {
 const hamburger = document.querySelector('.fa-bars');
 const menu = document.querySelector('#menu');
 const menuLis = menu.querySelectorAll('li');
+const sections = document.querySelectorAll('section')
 
 hamburger.addEventListener('click', () => {
   menu.classList.replace('invisible', 'menu');
+  sections.forEach((section) => section.classList.add('blur'));
 });
 for (let i = 0; i < menuLis.length; i += 1) {
   menuLis[i].addEventListener('click', () => {
     menu.classList.replace('menu', 'invisible');
+    sections.forEach((section) => section.classList.remove('blur'));
   });
 }
 
