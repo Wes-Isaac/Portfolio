@@ -168,6 +168,9 @@ h1 {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  opacity: 0;
+  transform: translateY(-3rem);
+  animation: fadeIn 2.5s forwards;
 }
 
 .primary {
