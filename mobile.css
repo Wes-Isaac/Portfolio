@@ -323,18 +323,19 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0;
-  min-width: 400px;
 }
 
 .bg-img-1 {
   background: url(./images/Mask-Group.jpg) no-repeat center center/cover;
+  position: absolute;
+  left: calc(100% - 68px);
   width: 68px;
   height: 127px;
   display: flex;
   margin-top: -3rem;
 }
 
-.aboutme-header {
+/* .aboutme-header {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -344,7 +345,7 @@ button {
   text-align: center;
   margin: 24px auto;
   margin-right: 40px;
-}
+} */
 
 .aboutme-p {
   width: 351px;
