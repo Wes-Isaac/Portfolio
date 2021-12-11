@@ -64,7 +64,6 @@ ul li a {
     opacity: 1;
     transform: translateY(0);
   }
-  
 }
 
 .headline {
@@ -240,7 +239,9 @@ button {
   position: absolute;
   left: calc(100% - 259.5px);
   top: calc(0% - 100px);
-  background: url(./images/illustration-about-me-1-desktop@2x.png) no-repeat center center/cover;
+  background:
+    url(./images/illustration-about-me-1-desktop@2x.png) no-repeat
+    center center/cover;
   height: 264.7px;
   width: 259.5px;
 }
@@ -481,20 +482,6 @@ form {
   margin-left: 0;
 }
 
-.form-social {
-  /* display: none; */
-  position: absolute;
-  bottom: -400px;
-  /* left: -155px; */
-  /* display: flex; */
-  flex-direction: row;
-  justify-content: center;
-  width: max-content;
-  /* margin: -15px 0; */
-  /* margin-bottom: -500px; */
-  /* border-top: #dfe1e6 2.2px solid; */
-}
-
 .footer {
   position: absolute;
   bottom: -400px;
@@ -509,26 +496,6 @@ form {
   list-style-type: none;
   padding: 0.15rem;
   margin: 10px 0;
-}
-
-.github {
-  order: 0;
-}
-
-.linkedin {
-  order: 1;
-}
-
-.angel {
-  order: 2;
-}
-
-.mv {
-  order: 3;
-}
-
-.twitter {
-  order: 4;
 }
 
 .email-container {
@@ -549,7 +516,9 @@ form {
   position: absolute;
   top: calc(90%);
   left: 0;
-  background: url(./images/illustration-1-contact-form-desktop.png) center center/cover;
+  background:
+    url(./images/illustration-1-contact-form-desktop.png) center
+    center/cover;
   width: 235.78px;
   height: 261.79px;
 }
@@ -558,7 +527,9 @@ form {
   position: absolute;
   top: calc(120%);
   left: 25%;
-  background: url(./images/illustration-2-contact-form-desktop-middle.png) center center/cover;
+  background:
+    url(./images/illustration-2-contact-form-desktop-middle.png)
+    center center/cover;
   width: 130.28px;
   height: 105.85px;
 }
@@ -591,7 +562,6 @@ form {
   to {
     transform: translateX(0);
   }
-  
 }
 
 .container {

@@ -19,7 +19,9 @@ body {
 
 main {
   height: inherit;
-  background: url(./images/header-illsutration-mobile@2x.png) no-repeat center center/cover;
+  background:
+    url(./images/header-illsutration-mobile@2x.png) no-repeat center
+    center/cover;
 }
 
 .invisible {
@@ -105,7 +107,7 @@ li {
 }
 
 #welcome::before {
-  content: '';
+  content: "";
   position: absolute;
   background: rgb(255, 255, 255);
   left: 0;
@@ -116,7 +118,7 @@ li {
 }
 
 #welcome::after {
-  content: '';
+  content: "";
   left: 0;
   top: 0;
   bottom: 0;
@@ -124,23 +126,19 @@ li {
   position: absolute;
   width: 0.125em;
   background: black;
-  animation: color 2s steps(7) 3s forwards,
-  blink 800ms steps(7) infinite;
+  animation: color 2s steps(7) 3s forwards, blink 800ms steps(7) infinite;
 }
 
 @keyframes color {
-  
   to {
-   left: 100%;
+    left: 100%;
   }
-  
 }
 
 @keyframes blink {
   to {
     background: transparent;
   }
-  
 }
 
 .sup-text {
@@ -155,7 +153,6 @@ li {
     opacity: 1;
     transform: translateY(0);
   }
-  
 }
 
 .headline {
@@ -198,6 +195,11 @@ p {
   text-align: center;
   color: #172b4d;
   margin: 58px 0;
+}
+
+.placeholder img {
+  width: 100%;
+  height: 100%;
 }
 
 .social {
@@ -264,11 +266,6 @@ p {
   margin: auto;
 }
 
-.placeholder img {
-  width: 100%;
-  height: 100%;
-}
-
 .text {
   display: flex;
   flex-direction: column;
@@ -327,7 +324,9 @@ button {
 .aboutme-text {
   margin-top: 30px;
   align-items: center;
-  background: url(./images/illustration-about-me-mobile.jpg) no-repeat center center/cover;
+  background:
+    url(./images/illustration-about-me-mobile.jpg) no-repeat center
+    center/cover;
 }
 
 .head-ele {
@@ -632,25 +631,32 @@ form {
   opacity: 0;
   transform: translateX(-4rem);
 }
+
 .menu ul li:nth-child(3) {
   opacity: 0;
   transform: translateY(-4rem);
   animation: visible 500ms forwards 1.2s;
 }
+
 .menu ul li:nth-child(4) {
   opacity: 0;
   transform: translateY(-4rem);
   animation: visible 500ms forwards 1s;
 }
+
 @keyframes visible {
   to {
     opacity: 1;
     transform: translateX(0);
   }
-  
 }
 
 .butt a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.buttons a {
   text-decoration: none;
   color: #fff;
 }
@@ -687,7 +693,6 @@ form {
   to {
     transform: translateX(0);
   }
-  
 }
 
 .container {
@@ -754,11 +759,6 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.buttons a {
-  text-decoration: none;
-  color: #fff;
 }
 
 span {
