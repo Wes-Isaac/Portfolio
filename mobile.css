@@ -196,10 +196,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: static;
-  width: 170.17px;
-  height: 20px;
-  left: 102.42px;
+  align-items: center;
   margin: 15px 0;
 }
 
@@ -488,8 +485,9 @@ button {
 .form-container .form-img {
   position: absolute;
   height: 132.37px;
+  width: 50px;
   top: 78%;
-  left: 88.5%;
+  left: calc(100% - 50px);
 }
 
 form {
