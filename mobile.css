@@ -23,19 +23,29 @@ main {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   height: 90vh;
   width: 100vw;
-  z-index: 2;
+  z-index: 6;
+  animation: menu 1.5s forwards;
+  transform: translateY(-100%);
+}
+
+@keyframes menu {
+  to {
+    transform: translateY(0);
+  }
 }
 
 .cancel-icon {
   position: absolute;
-  top: 0;
+  top: 15px;
   left: 93%;
-  color: #93a79d;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 .desktop {
