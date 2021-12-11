@@ -69,7 +69,12 @@ li {
 }
 
 .mobile {
+  position: fixed;
   display: block;
+  width: 100%;
+  z-index: 4;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .nav {
@@ -87,7 +92,6 @@ li {
   font-size: 1.3rem;
   font-weight: bolder;
   font-family: monospace;
-  /* color: white; */
   position: relative;
   width: max-content;
 }
@@ -131,12 +135,26 @@ li {
   
 }
 
+.sup-text {
+  opacity: 0;
+  transform: translateY(3rem);
+  font-weight: 600;
+  animation: fadeIn 2.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
 .headline {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 64px 24px;
-  width: 375px;
   height: 726px;
   left: 0;
   top: 92px;
