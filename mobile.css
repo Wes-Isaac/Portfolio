@@ -258,12 +258,15 @@ p {
 
 .item {
   margin: 24px;
-  border: 1px solid #d0d9d4;
+  border: 1px solid #9b9c9c;
   border-radius: 8px;
 }
 
 .placeholder {
+  padding: 5px;
   margin: auto;
+  height: 50%;
+  border-bottom: 1px solid #000;
 }
 
 .text {
@@ -306,8 +309,14 @@ h3 {
   color: #3a4a42;
 }
 
+.a-but {
+  text-decoration: none;
+  color: #fff;
+}
+
 button {
   border: none;
+  cursor: pointer;
   padding: 10px;
   border-radius: 4px;
   font-style: normal;
@@ -318,7 +327,12 @@ button {
   letter-spacing: 0.03em;
   color: #fff;
   background: #36b37f;
-  margin: 5px 10px;
+  margin: 25px 10px;
+  transition: 1s;
+}
+
+button:hover {
+  background: #008552;
 }
 
 .aboutme-text {
@@ -570,7 +584,6 @@ form {
 }
 
 .form-button {
-  padding: 15px;
   width: 128px;
   height: 48px;
 }
