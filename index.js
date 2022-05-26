@@ -1,4 +1,5 @@
 const projects = [{
+  id:'1',
   title: 'To do list app',
   image: 'images/Screenshot24.png',
   description: "A simple to do list Application which dynamically renders tasks in JavaScript using the Webpack. Projects and tasks can be created and stored in Web browser's local storage.",
@@ -10,46 +11,129 @@ const projects = [{
   lang6: 'Terminal',
   lang7: 'Webpack',
   lang8: 'Github',
+  repo: 'https://github.com/Wes-Isaac/To-do-list',
+  live: 'https://wes-isaac.github.io/To-do-list/'
+},{
+  id:'2',
+  title: 'Space Travelers Hub',
+  image: 'images/space.png',
+  description: "This project is for space rockets and missions. You can see available rockets and missions to reserve or join. The project built by using JavaScript, React, Redux, CSS. Built with external api provided by spacex.",
+  lang1: 'React',
+  lang2: 'Redux',
+  lang3: 'CSS',
+  lang4: 'React',
+  lang5: 'Redux',
+  lang6: 'CSS',
+  lang7: 'Webpack',
+  lang8: 'Github',
+  repo: 'https://github.com/Wes-Isaac/space-travelers-hub',
+  live: 'https://cranky-cray-0feacf.netlify.app/',
+},{
+  id:'3',
+  title: 'Vocabulary Game',
+  image: 'images/vocab.png',
+  description: "A fun vocabulary game where you can test you're vocabulary skills and compare yourself with others in the leaderboard. Built with external apis such as the Meriam Webster dictionary api and a leaderboard api provided by Microverse.",
+  lang1: 'html',
+  lang2: 'css',
+  lang3: 'JavaScript',
+  lang4: 'HTML',
+  lang5: 'CSS',
+  lang6: 'JavaScript',
+  lang7: 'Webpack',
+  lang8: 'Github',
+  repo: 'https://github.com/Wes-Isaac/Vocabulary-game',
+  live: 'https://wes-isaac.github.io/Vocabulary-game/',
+},{
+  id:'4',
+  title: 'Budget App',
+  image: 'images/budget.png',
+  description: "This project is created as part of the rails capstone at Microverse. This app is a mobile web application where a user manage their budget: have a list of transactions associated with a category, so that the user can see how much money they spent and on what.",
+  lang1: 'RoR',
+  lang2: 'CSS',
+  lang3: 'Postgresql',
+  lang4: 'RoR',
+  lang5: 'CSS',
+  lang6: 'Postgresql',
+  lang7: 'Heroku',
+  lang8: 'Capybara',
+  repo: 'https://github.com/Wes-Isaac/Budget-App',
+  live: 'https://budgetol.herokuapp.com',
+},{
+  id:'5',
+  title: 'Recipe App',
+  image: 'images/recipe.png',
+  description: "The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.",
+  lang1: 'RoR',
+  lang2: 'CSS',
+  lang3: 'Postgresql',
+  lang4: 'RoR',
+  lang5: 'CSS',
+  lang6: 'Postgresql',
+  lang7: 'Heroku',
+  lang8: 'Capybara',
+  repo: 'https://github.com/Wes-Isaac/Recipe-App',
+  live: 'https://recipeups.herokuapp.com/',
+},{
+  id:'6',
+  title: 'Online Mart',
+  image: 'images/mart.png',
+  description: "A simple to do list Application which dynamically renders tasks in JavaScript using the Webpack. Projects and tasks can be created and stored in Web browser's local storage.",
+  lang1: 'PHP',
+  lang2: 'JavaScript',
+  lang3: 'Stripe JS',
+  lang4: 'PHP',
+  lang5: 'JavaScript',
+  lang6: 'Stripe JS',
+  lang7: 'MYSQL',
+  lang8: 'CSS',
+  repo: 'https://github.com/Wes-Isaac/phpmart-',
+  live: 'http://fast-wildwood-31419.herokuapp.com',
 }];
-const [project] = projects;
+
 const button = document.querySelectorAll('.popup');
 const popup = document.querySelector('.popup-window');
 
-popup.innerHTML = `<div class="container">
-<button class="close-button"><i class="fa fa-times"></i></button>
-<img src="${project.image}" alt="project-img" class="popup-img">
-<div class="header-container">
-    <h2 class="container-title">${project.title}</h2>
-    <div class="desktop butt">
-<button><a href="https://wes-isaac.github.io/To-do-list/dist/" target="_blank">See Live</a><span><img src="./images/Icon-Export.png" alt="github"></span></button>
-<button><a href="https://github.com/Wes-Isaac/To-do-list" target="_blank">See Source</a><span><img src="./images/Git.png" alt="github"></span></button>
-</div>
-</div>
+const fillPopup = (popup, [ project ]) => {
 
-<ul class="skillsbar modal-ul">
-<li class="mobile">${project.lang1}</li>
-<li class="mobile">${project.lang2}</li>
-<li class="mobile">${project.lang3}</li>
-<li class="desktop">${project.lang4}</li>
-<li class="desktop">${project.lang5}</li>
-<li class="desktop">${project.lang6}</li>
-<li class="desktop">${project.lang7}</li>
-<li class="desktop">${project.lang8}</li>
-</ul>
-<p class="description">${project.description}</p>
-<div class="buttons mobile">
-<button><a href="https://wes-isaac.github.io/To-do-list/dist/" target="_blank">See Live</a><span><img src="./images/Icon-Export.png" alt="github"></span></button>
-<button><a href="https://github.com/Wes-Isaac/To-do-list" target="_blank">See Source</a><span><img src="./images/Git.png" alt="github"></span></button>
-</div>
+  popup.innerHTML = `<div class="container">
+  <button class="close-button"><i class="fa fa-times"></i></button>
+  <img src="${project.image}" alt="project-img" class="popup-img">
+  <div class="header-container">
+      <h2 class="container-title">${project.title}</h2>
+      <div class="desktop butt">
+  <button><a href="${project.live}" target="_blank">See Live</a><img src="./images/Icon-Export.png" alt="github"></button>
+  <button><a href="${project.repo}" target="_blank">See Source</a><img src="./images/Git.png" alt="github"></button>
+  </div>
+  </div>
 
-</div>`;
-const close = document.querySelector('.close-button');
-close.addEventListener('click', () => {
-  popup.classList.replace('window', 'invisible');
-});
+  <ul class="skillsbar modal-ul">
+  <li class="mobile">${project.lang1}</li>
+  <li class="mobile">${project.lang2}</li>
+  <li class="mobile">${project.lang3}</li>
+  <li class="desktop">${project.lang4}</li>
+  <li class="desktop">${project.lang5}</li>
+  <li class="desktop">${project.lang6}</li>
+  <li class="desktop">${project.lang7}</li>
+  <li class="desktop">${project.lang8}</li>
+  </ul>
+  <p class="description">${project.description}</p>
+  <div class="buttons mobile">
+  <button><a href="${project.llve}" target="_blank">See Live</a><img src="./images/Icon-Export.png" alt="github"></button>
+  <button><a href="${project.repo}" target="_blank">See Source</a><img src="./images/Git.png" alt="github"></button>
+  </div>
+
+  </div>`;
+  const close = document.querySelector('.close-button');
+  close.addEventListener('click', () => {
+    popup.classList.replace('window', 'invisible');
+  });
+}
 
 button.forEach((but) => {
+  
   but.addEventListener('click', () => {
+    const project = projects.filter((pro) => pro.id === but.id);
+    fillPopup(popup, project);
     popup.classList.replace('invisible', 'window');
   });
 });

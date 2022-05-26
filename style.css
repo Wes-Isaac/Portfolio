@@ -161,12 +161,15 @@ p {
 .item {
   min-height: 474px;
   margin: 14px;
-  border: 1px solid #d0d9d4;
+  border: 1px solid #9b9c9c;
   border-radius: 8px;
 }
 
 .placeholder {
+  padding: 5px;
   margin: auto;
+  height: 50%;
+  border-bottom: 1px solid #000;
 }
 
 .placeholder img {
@@ -214,6 +217,7 @@ h3 {
 
 button {
   border: none;
+  cursor: pointer;
   padding: 10px;
   border-radius: 4px;
   font-style: normal;
@@ -225,6 +229,16 @@ button {
   color: #fff;
   background: #36b37f;
   margin: 25px 10px;
+  transition: 1s;
+}
+
+.a-but {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover {
+  background: #008552;
 }
 
 .aboutme-text {
@@ -232,7 +246,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60vh;
 }
 
 .bg-img-1 {
@@ -476,7 +489,6 @@ form {
 
 .form-button {
   align-self: flex-start;
-  padding: 15px;
   width: 128px;
   height: 48px;
   margin-left: 0;
