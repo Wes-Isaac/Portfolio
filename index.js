@@ -1,7 +1,7 @@
 const projects = [{
   id: '1',
   title: 'To do list app',
-  image: 'images/Screenshot24.png',
+  image: './images/Screenshot24.png',
   description: 'A simple to do list Application which dynamically renders tasks in JavaScript using the Webpack. Projects and tasks can be created and stored in Web browser\'s local storage.',
   lang1: 'html',
   lang2: 'css',
@@ -16,7 +16,7 @@ const projects = [{
 }, {
   id: '2',
   title: 'Space Travelers Hub',
-  image: 'images/space.png',
+  image: './images/space.png',
   description: 'This project is for space rockets and missions. You can see available rockets and missions to reserve or join. The project built by using JavaScript, React, Redux, CSS. Built with external api provided by spacex.',
   lang1: 'React',
   lang2: 'Redux',
@@ -31,7 +31,7 @@ const projects = [{
 }, {
   id: '3',
   title: 'Vocabulary Game',
-  image: 'images/vocab.png',
+  image: './images/vocab.png',
   description: 'A fun vocabulary game where you can test you\'re vocabulary skills and compare yourself with others in the leaderboard. Built with external apis such as the Meriam Webster dictionary api and a leaderboard api provided by Microverse.',
   lang1: 'html',
   lang2: 'css',
@@ -46,7 +46,7 @@ const projects = [{
 }, {
   id:'4',
   title: 'Budget App',
-  image: 'images/budget.png',
+  image: './images/budget.png',
   description: 'This project is created as part of the rails capstone at Microverse. This app is a mobile web application where a user manage their budget: have a list of transactions associated with a category, so that the user can see how much money they spent and on what.',
   lang1: 'RoR',
   lang2: 'CSS',
@@ -61,7 +61,7 @@ const projects = [{
 }, {
   id:'5',
   title: 'Recipe App',
-  image: 'images/recipe.png',
+  image: './images/recipe.png',
   description: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
   lang1: 'RoR',
   lang2: 'CSS',
@@ -76,7 +76,7 @@ const projects = [{
 }, {
   id:'6',
   title: 'Online Mart',
-  image: 'images/mart.png',
+  image: './images/mart.png',
   description: 'A simple to do list Application which dynamically renders tasks in JavaScript using the Webpack. Projects and tasks can be created and stored in Web browser\'s local storage.',
   lang1: 'PHP',
   lang2: 'JavaScript',
