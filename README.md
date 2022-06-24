@@ -22,7 +22,7 @@ It is bult with flexbox and css grid. It contains images some are background ima
 
 ## Live Demo
 
-[Live Demo Link](https://wes-isaac.github.io/Portfolio/)
+[Live Demo Link](https://chimerical-pony-baaef9.netlify.app)
 
 
 
